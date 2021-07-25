@@ -326,7 +326,7 @@ header {
     display: inline-block;
     color: white;
     text-decoration: none;
-    pointer-events: none; }
+    cursor: default; }
   header h1.name {
     font-weight: 300;
     font-size: 87pt;
