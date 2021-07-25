@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+
+  height: 100%;
+  // background: linear-gradient(#82D6FF 0%, #5894FF 100%) no-repeat fixed;
+  background: linear-gradient($bg-1 0%, $bg-2 100%) no-repeat fixed;
+
+  color: #fff;
+
+}
+
+::selection {
+  background-color: #0B62E9;
+  color: white;
+}
+
+code {
+  font-family: Roboto Mono, monospace;
+  font-size: 0.85em;
+}
+
+header {
+  padding-left: 50px;
+  /* margin-left: 50px; */
+  user-select: none;
+
+  h1.name {
+    font-weight: 300;
+    font-size: 87pt;
+    margin: 30px 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding-left: 16px;
+
+    h1.name {
+      font-weight: 300;
+      font-size: 64pt;
+      margin: 30px 0 16px 0;
+
+      .ln {
+        font-size: 32pt;
+      }
+    }
+  }
+
+}
+
+nav {
+  display: none;
+
+  text-align: center;
+
+  a, a:visited {
+    display: inline-block;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: block;
+  }
+}
+
+
+div.content {
+  display: flex;
+  padding: 0 40px;
+
+  h2 {
+    font-weight: 400;
+    font-size: 24pt;
+  }
+
+  h4 {
+    font-weight: 300;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+    padding: 16px 16px;
+  }
+
+  .portfolio {
+    flex: 3 3;
+    margin: 0 32px 16px 0;
+
+    @media only screen and (max-width: 600px) {
+      margin: 0 0 0px 0;
+    }
+
+    .projects {
+      .project {
+        background: rgba(255, 255, 255, .2);
+        border-radius: 8px;
+        margin: 8px 0;
+        padding: 12px 24px;
+        font-weight: 400;
+        font-size: 0.9em;
+
+        transition: 0.25s all;
+
+        a, a:visited {
+          color: $link;
+          text-decoration: none;
+          font-weight: 500;
+
+          transition: 0.25s all;
+        }
+
+        h3 {
+          margin: 24px 8px;
+
+          a, a:visited {
+            color: white;
+            text-decoration: none;
+          }
+        }
+
+        .links {
+          font-size: 0.85em;
+
+          a {
+            display: inline-block;
+            padding: 0;
+
+            &:not(:first-child)::before {
+              content: '|';
+              margin-right: 6px;
+            }
+          }
+        }
+
+        .desc {
+          margin: 0;
+          max-height: 0;
+          overflow: hidden;
+          transition: 0.5s max-height;
+        }
+
+        .tagline {
+          margin-bottom: 16px;
+          transition: 0.5s margin;
+        }
+
+        &:hover {
+          color: $darktext;
+          background: rgba(255, 255, 255, .9);
+          box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+
+          .desc {
+            max-height: 100vh;
+          }
+
+          a, a:visited {
+            color: $link;
+          }
+
+          h3 > a, h3 > a:visited {
+            color: $darktext;
+          }
+
+          .name img {
+            filter: none;
+          }
+
+          .tagline {
+            margin-bottom: 0;
+          }
+
+          .links {
+            font-size: 1em;
+          }
+        }
+
+        .name {
+          display: flex;
+          align-items: center;
+
+          h3 {
+            font-weight: 400;
+            font-size: 1.5em;
+
+            margin-left: 8px;
+
+
+          }
+
+          img {
+            height: 48px;
+            filter: brightness(0) invert(1);
+
+            transition: 0.25s filter;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 2 2;
+
+    div {
+      margin-bottom: 48px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin: 0;
+    }
+
+    .socials {
+      .list {
+        a, a:visited {
+          display: block;
+
+          color: white;
+          text-decoration: none;
+          font-weight: 500;
+
+          transition: 0.25s all;
+
+          margin: 5px 0;
+
+          img {
+            position: relative;
+            filter: brightness(0) invert(1);
+            height: 40px;
+            width: 40px;
+            vertical-align: middle;
+          }
+
+          span {
+            position: relative;
+
+            margin-left: 5px;
+
+            text-overflow: clip;
+            white-space: nowrap;
+            overflow: hidden;
+
+            text-align: center;
+            vertical-align: middle;
+          }
+
+          &:hover {
+            img {
+            }
+
+            span {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

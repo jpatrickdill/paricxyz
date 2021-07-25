@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patrick Dill</title>
+    <meta name="og:title" property="og:title" content="Patrick Dill">
+    <meta property="og:description" content="Programmer from Atlanta, Georgia."/>
+    <meta name="description" content="Patrick Dill is a programmer from Atlanta, GA.">
+    <link rel="icon" href="/favicon.png" type="image/png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167278179-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167278179-1');
+    </script>
+
+
+    <link href="/styles.css?v=1" rel="stylesheet">
+</head>
+<body>
+{#<div class="home">#}
+<header>
+    <h1 class="name">
+        <span class="name">patrick<span class="ln"> dill</span></span>
+    </h1>
+</header>
+<nav>
+    <a href="#about">about</a><span> | </span>
+    <a href="#socials">socials</a>
+</nav>
+<div class="content">
+    <div id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            {% for project in projects %}
+                <div class="project">
+                    <div class="name">
+                        <img src="{{ project["icon"] }}">
+                        <h3><a href="{{ project["url"] }}" target="_blank">
+                            {{ project["name"] }}
+                        </a></h3>
+                    </div>
+                    <div class="links">
+                        {% for name, uri in project["links"].items() %}
+                            <a target="_blank" href="{{ uri }}">{{ name }}</a>
+                        {% endfor %}
+                    </div>
+                    <p class="tagline">
+                        {{ project["description"][0] }}
+                    </p>
+                    {% if project["description"]|length > 1 %}
+                        <div class="desc">
+                            {% for line in project["description"][1:] %}
+                                {% if line[0] == "<" %}
+                                    {{ line|safe }}
+                                {% else %}
+                                    <p>{{ line|safe }}</p>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="right">
+        <div id="about" class="about">
+            <h2>About Me</h2>
+            <h4>
+                Hi! I'm Patrick.
+            </h4>
+            <p>
+                I'm a student from Atlanta pursuing a degree in Computer Science. In my free time I enjoy
+                making plugins and tools on Roblox.
+            </p>
+            <p>
+                I typically use Python + Flask for web apps and Lua for Roblox projects. I'm learning Express
+                and React.
+            </p>
+        </div>
+        <div id="socials" class="socials">
+            <h2>Find Me Online</h2>
+            <p>
+                I can be found <b>@paricdil</b> on most platforms.
+            </p>
+            <div class="list">
+                <a target="_blank" href="https://twitter.com/paricdil">
+                    <img src="icons/twitter.png" alt="Twitter">
+                    <span>paricdil</span>
+                </a>
+                <a target="_blank" href="https://github.com/jpatrickdill">
+                    <img src="icons/github.png" alt="GitHub">
+                    <span>jpatrickdill</span>
+                </a>
+                <a target="_blank" href="https://www.youtube.com/channel/UC0Cu6xs8y616d6cV0tyR1Hg/">
+                    <img src="icons/youtube.png" alt="YouTube">
+                    <span>Patrick</span>
+                </a>
+                <a target="_blank" href="https://discord.com/invite/DRAf3wy">
+                    <img src="icons/discord.png" alt="Discord">
+                    <span>Discord Invite</span>
+                </a>
+                <a target="_blank" href="https://devforum.roblox.com/u/paricdil/summary">
+                    <img src="icons/roblox.png" alt="Roblox">
+                    <span>paricdil</span>
+                </a>
+                <a target="_blank" href="mailto:jamespatrickdill@gmail.com">
+                    <img src="icons/email.png" alt="Email">
+                    <span>jamespatrickdill@gmail.com</span>
+                </a>
+                <a target="_blank" href="https://cash.app/$paricdil">
+                    <img src="icons/cashapp.png" alt="Cashapp">
+                    <span>Donate</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{#</div>#}
+</body>
+</html>

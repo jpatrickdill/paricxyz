@@ -1,0 +1,75 @@
+{
+  "projects": [
+    {
+      "name": "Roblox Requests",
+      "url": "https://requests.paric.xyz",
+      "links": {
+        "Docs": "https://requests.paric.xyz",
+        "GitHub": "https://github.com/jpatrickdill/roblox-requests",
+        "DevForum": "https://devforum.roblox.com/t/roblox-requests-simple-elegant-http-in-roblox/355294"
+      },
+      "icon": "/icons/requests-64.png",
+      "description": [
+        "Roblox Requests is an HTTP library for Roblox Lua.",
+        "With Requests you can send robust, human-readable HTTP requests without ever having to deal with the underlying HttpService. No more manually encoded query strings or POST data.",
+        "Features:",
+        "<ul><li>Sessions with Cookie Persistence & Default Headers",
+        "<li>Automatic Query Strings",
+        "<li>JSON Body Encoding, Response Decoding",
+        "<li>HTML/XML Parsing with DOM, jQuery Selectors",
+        "<li>Key/Value Cookies",
+        "<li>Multipart File Encoding and Upload",
+        "<li>Custom Per-Session Ratelimiting</ul>"
+      ]
+    },
+    {
+      "name": "Roads Plugin",
+      "url": "https://www.roblox.com/library/4846074825/Beautiful-Roads",
+      "links": {
+        "Install": "https://www.roblox.com/library/4846074825/Beautiful-Roads",
+        "Trailer": "https://www.youtube.com/watch?v=BnULFncl1oo"
+      },
+      "icon": "/icons/BR.png",
+      "description": [
+        "The Roads plugin will help you create roads for your game faster than ever before.",
+        "Featuring a node-based editor that allows you to manipulate lanes individually or in groups, as well as a line and materials editor allowing you to customize your roads to your needs.",
+        "The Road plugin uses simple parts when appropriate, but unlike any other plugin, is capable of smooth banking and transitioning between lane widths.",
+        "<div class=\"video\"><iframe src=\"https://www.youtube.com/embed/BnULFncl1oo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>"
+      ]
+    },
+    {
+      "name": "World Import (City Loader Plugin)",
+      "url": "http://cities.paric.xyz/",
+      "links": {
+        "Install": "https://www.roblox.com/library/5459691708/City-Loader-Render-Real-Life-Roads-Buildings",
+        "DevForum": "https://devforum.roblox.com/t/city-loader-plugin-templates-for-real-life-buildings-cities-in-studio/696886"
+      },
+      "icon": "/icons/building.png",
+      "description": [
+        "Originally created as the City Explorer game, this plugin allows you to import real world terrain and basic building shapes directly into studio.",
+        "With this plugin, you won't need to figure out how to get and import a heightmap. Just select an area using the link the plugin gives you.",
+        "You can also import basic geometries for buildings in most urban and some suburban areas. All 3D data &copy; OpenStreetMap contributors.",
+        "<div class=\"video\"><iframe src=\"https://www.youtube.com/embed/5LOx_42RqN4\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>",
+        "Made with Lua (plugin) and Python/JS (web)"
+      ]
+    },
+    {
+      "name": "lua-emoji",
+      "url": "https://github.com/jpatrickdill/lua-emoji",
+      "links": {
+        "GitHub": "https://github.com/jpatrickdill/lua-emoji",
+        "DevForum": "https://devforum.roblox.com/t/lua-emoji-discord-style-emoji-aliases/619924"
+      },
+      "icon": "/icons/emoji.png",
+      "description": [
+        "Convert text to Emoji in Lua.",
+        "Lua-emoji uses aliases common in chat clients like Discord to convert any text between :colons:",
+        "<p><code>emoji(\":thumbs_up:\")</code> -> \uD83D\uDC4D</p>",
+        "Lua-emoji also supports skin tones! <code>emoji()</code> takes an optional second argument:",
+        "<p><code>emoji(\":thumbs_up:\", emoji.MediumDark)</code> -> \uD83D\uDC4D\uD83C\uDFFE</p>",
+        "Available skin tones are Light, Dark, MediumLight, MediumDark, and Medium. Suffixes can also be added to individual emojis:",
+        "<code>emoji(\":thumbs_up_d: :thumbs_up_l:\")</code> -> \uD83D\uDC4D\uD83C\uDFFF \uD83D\uDC4D\uD83C\uDFFB"
+      ]
+    }
+  ]
+}
