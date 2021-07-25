@@ -34,15 +34,18 @@ header {
   user-select: none;
 
   a, a:visited {
+    display: inline-block;
     color: white;
     text-decoration: none;
     pointer-events: none;
 
-    h1.name {
-      font-weight: 300;
-      font-size: 87pt;
-      margin: 30px 0;
-    }
+
+  }
+
+  h1.name {
+    font-weight: 300;
+    font-size: 87pt;
+    margin: 30px 0;
   }
 
 
