@@ -2,13 +2,15 @@ import json
 import os
 from flask import Flask, render_template
 
+indev = os.environ.get("dev")
+
 server_name = None
-if not os.environ.get("dev"):
+if not indev:
     server_name = "paric.xyz"
 
 app = Flask(__name__, static_url_path="/", static_folder="static")
 
-app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.config['TEMPLATES_AUTO_RELOAD'] = indev
 
 with open("./static/projects.json") as file:
     projects = json.load(file)
