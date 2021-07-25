@@ -1,6 +1,10 @@
 import json
-
+import os
 from flask import Flask, render_template
+
+server_name = None
+if not os.environ["dev"]:
+    server_name = "paric.xyz"
 
 app = Flask(__name__, static_url_path="/", static_folder="static")
 
@@ -16,4 +20,4 @@ def hello_world():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(server_name=server_name)
