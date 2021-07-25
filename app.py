@@ -3,7 +3,7 @@ import os
 from flask import Flask, render_template
 
 server_name = None
-if not os.environ["dev"]:
+if not os.environ.get("dev"):
     server_name = "paric.xyz"
 
 app = Flask(__name__, static_url_path="/", static_folder="static")
