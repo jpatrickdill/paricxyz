@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patrick Dill</title>
+    <meta name="og:title" property="og:title" content="Patrick Dill">
+    <meta property="og:description" content="Programmer from Atlanta, Georgia."/>
+    <meta name="description" content="Patrick Dill is a programmer from Atlanta, GA.">
+    <link rel="icon" href="/favicon.png" type="image/png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167278179-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167278179-1');
+    </script>
+
+
+    <link href="/pfstyles.css" rel="stylesheet">
+</head>
+<body>
+{#<div class="home">#}
+
+<div class="content">
+    <header>
+        <a class="name" href="#">
+            <h1 class="name">
+                <span class="name">Patrick<span class="ln"> Dill</span></span>
+            </h1>
+        </a>
+
+        <div class="tr-contact">
+            <a href="mailto:jamespatrickdill@gmail.com">jamespatrickdill@gmail.com</a>
+            <span>&middot; (470) 262-4365 &middot;</span>
+            <a target="_blank" href="https://github.com/jpatrickdill">GitHub</a>
+        </div>
+    </header>
+    <div id="about" class="about">
+        <h4>
+            Hi! I'm Patrick.
+        </h4>
+        <p>
+            I'm a student from Atlanta, GA pursuing a degree in Computer Science.
+        </p>
+        <p>
+            In my free time, I enjoy creating plugins and tools for the Roblox game platform that I grew up on.
+            My tools have amassed 45,000+ installs and are used in games with over 1,000,000 total weekly users.
+        </p>
+        <p>
+            My top languages are Python and Luau. I also have experience with NodeJS, Git, PostgreSQL, Redis,
+            and web development tools including HTML/SCSS and Javascript. I've used Heroku and AWS for hosting.
+        </p>
+        <p>
+            Most of my experience as a hobbyist programmer has been in Python, using Flask as a web framework.
+            I'm committed to learning React and Express so I can create better front ends for projects in the future.
+        </p>
+    </div>
+    <div id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <p>
+            As I grew up in the Roblox community, many of my projects aim to improve the development
+            experience on the platform.
+        </p>
+        <div class="projects">
+
+            <div class="project">
+                <div class="name">
+                    <img src="/icons/requests-64.png">
+                    <h3><a href="https://requests.paric.xyz" target="_blank">
+                        Roblox Requests
+                    </a></h3>
+                </div>
+                <div class="links">
+                    <a target="_blank" href="https://requests.paric.xyz">Docs</a>
+                    <a target="_blank" href="https://github.com/jpatrickdill/roblox-requests">GitHub</a>
+                </div>
+                <div class="desc">
+                    <p>
+                        Roblox Requests is an HTTP library I created for Roblox. It's a wrapper to
+                        Roblox's HttpService.
+                    </p>
+                    <p>
+                        I created Requests because Roblox's HttpService is difficult to use, not readable, and leaves
+                        a lot of work to be done for the developer.
+                    </p>
+                    <p>
+                        Roblox Requests was my first time creating an API in Lua. I wanted to create a library that was
+                        simple, effective, and easy to understand, so I modeled it after the Python Requests library
+                        that I use often.
+                    </p>
+                    <p>
+                        This library also gave me my first experience creating a documentation website from scratch,
+                        using the Jekyll static site generator. The website can be seen at
+                        <a target="_blank" href="https://requests.paric.xyz/">requests.paric.xyz</a>.
+                    </p>
+                    <p>Features:</p>
+                    <ul>
+                        <li>Sessions with Cookie Persistence &amp; Default Headers
+                        </li>
+                        <li>Automatic Query Strings
+                        </li>
+                        <li>JSON Body Encoding, Response Decoding
+                        </li>
+                        <li>HTML/XML Parsing with DOM, jQuery Selectors
+                        </li>
+                        <li>Key/Value Cookies
+                        </li>
+                        <li>Multipart File Encoding and Upload
+                        </li>
+                        <li>Custom Per-Session Ratelimiting</li>
+                    </ul>
+                    <p>Skills:</p>
+                    <ul>
+                        <li>Lua</li>
+                        <li>Git</li>
+                        <li>Jekyll</li>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="name">
+                    <img src="/icons/BR.png">
+                    <h3><a href="https://www.roblox.com/library/4846074825/Beautiful-Roads" target="_blank">
+                        Roads Plugin
+                    </a></h3>
+                </div>
+                {#                <div class="links">#}
+                {#                    <a target="_blank" href="https://www.youtube.com/watch?v=BnULFncl1oo">Trailer</a>#}
+                {#                </div>#}
+
+                <div class="desc">
+                    <p>
+                        This is a tool I created for modeling roads in Roblox for driving games.
+                    </p>
+                    <p>
+                        Two common ways to model roads in Roblox are:
+                    </p>
+                    <ol>
+                        <li>
+                            Manually using basic geometries, either sticking to a grid or using an arc plugin
+                            to curve it, leaving overlapping textures
+                        </li>
+                        <li>
+                            Using a plugin to make a manually built road model follow a Bezier curve, giving smoother
+                            roads, but still leaving overlapping parts/textures
+                        </li>
+                    </ol>
+                    <p>
+                        While both of these methods work, they certainly don't maximize efficiency. I created my
+                        road plugin as an alternative.
+                    </p>
+                    <p>
+                        It features an editor that that uses "nodes" to
+                        layout a road path. Each lane of traffic is considered independent, allowing you to refactor
+                        roads and easily create forks, merges, slip lanes, etc. while only rendering a single surface
+                        where lanes are grouped.
+                    </p>
+                    <p>
+                        Publishing this plugin was my first time marketing something I made. I used Adobe Photoshop
+                        to create thumbnails for the plugin and Adobe Premiere Pro to create a trailer video as well
+                        as tutorials.
+                    </p>
+                    <p>
+                        The plugin has been installed 30,000 times since its initial release in May 2020.
+                    </p>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/BnULFncl1oo" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                    </div>
+                    <p>Skills:</p>
+                    <ul>
+                        <li>Lua</li>
+                        <li>Git</li>
+                        <li>Premiere Pro</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="name">
+                    <img src="/icons/rbxserverlist.png">
+                    <h3><a>
+                        RbxServerList
+                    </a></h3>
+                </div>
+                <div class="links">
+                </div>
+                <div class="desc">
+                    <p>
+                        Many Roblox communities exist on Discord, whether it's a few people playing with their friends
+                        or entire game audiences. RbxServerList is a website and Discord bot I created that simplifies
+                        sharing private servers within these communities.
+                    </p>
+                    <p>
+                        Instead of manually maintaining a list of private servers like many communities do,
+                        RbxServerList allows members of your Discord to "donate" their private server.
+                    </p>
+                    <p>
+                        Every 30 seconds, RbxServerList checks every private server in its pool, getting player counts
+                        and ensuring that join links are still active. Users are also allowed to choose max player
+                        counts, which will hide their private server from the list when reached.
+                    </p>
+                    <img width="75%" src="/images/rsl1.jpeg">
+                    <img src="/images/rsl2.png">
+                    <p>
+                        The two major challenges I faced creating RbxServerList were validating private servers and
+                        keeping updated player counts. Because Roblox didn't have public API endpoints for either of
+                        these, I had to figure it out myself using Chrome devtools to watch the network as I browsed
+                        server lists from the Roblox website.
+                    </p>
+                    <p>
+                        RbxServerList was my first time using OAuth2 on a public project, as donating a serer online
+                        requires signing in via Discord. The website uses Redis to store live information for each
+                        private server.
+                    </p>
+                    <p>Skills:</p>
+                    <ul>
+                        <li>Git</li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>HTML/SCSS</li>
+                        <li>Javascript</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="socials" class="socials">
+        <h2>Contact Me / Socials</h2>
+{#        <p>#}
+{#            I can be found <b>@paricdil</b> on most platforms.#}
+{#        </p>#}
+        <div class="list">
+            <a target="_blank" href="mailto:jamespatrickdill@gmail.com">
+                <img src="icons/email.png" alt="Email">
+                <span>jamespatrickdill@gmail.com</span>
+            </a>
+            <a target="_blank" href="https://github.com/jpatrickdill">
+                <img src="icons/github.png" alt="GitHub">
+                <span>jpatrickdill</span>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/channel/UC0Cu6xs8y616d6cV0tyR1Hg/">
+                <img src="icons/youtube.png" alt="YouTube">
+                <span>Patrick</span>
+            </a>
+            <a>
+                <img src="icons/discord.png" alt="Discord">
+                <span>paric#5665</span>
+            </a>
+            <a target="_blank" href="https://devforum.roblox.com/u/paricdil/summary">
+                <img src="icons/roblox.png" alt="Roblox">
+                <span>paricdil</span>
+            </a>
+        </div>
+    </div>
+</div>
+{#</div>#}
+</body>
+</html>

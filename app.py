@@ -10,7 +10,7 @@ if not indev:
 
 app = Flask(__name__, static_url_path="/", static_folder="static")
 
-app.config['TEMPLATES_AUTO_RELOAD'] = indev
+app.config['TEMPLATES_AUTO_RELOAD'] = True if indev else False
 
 with open("./static/projects.json") as file:
     projects = json.load(file)
@@ -21,5 +21,10 @@ def hello_world():
     return render_template("index.html", projects=projects["projects"])
 
 
+@app.route('/resume')
+def portfolio():
+    return render_template("portfolio.html", projects=projects["projects"])
+
+
 if __name__ == '__main__':
-    app.run(server_name=server_name)
+    app.run(server_name=server_name, debug=True)
