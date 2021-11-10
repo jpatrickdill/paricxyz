@@ -9,8 +9,7 @@ if not indev:
     server_name = "paric.xyz"
 
 app = Flask(__name__, static_url_path="/", static_folder="static")
-
-app.config['TEMPLATES_AUTO_RELOAD'] = True if indev else False
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 with open("./static/projects.json") as file:
     projects = json.load(file)

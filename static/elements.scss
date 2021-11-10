@@ -48,7 +48,8 @@ header {
 
 
   @media only screen and (max-width: 600px) {
-    padding-left: 16px;
+    padding-left: 0;
+    text-align: center;
 
     h1.name {
       font-size: 64pt;
@@ -119,14 +120,18 @@ div.content {
         font-weight: 400;
         font-size: 0.9em;
 
-        transition: 0.25s all;
+        -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        transition: all .25s ease;
 
         a, a:visited {
           color: $link;
           text-decoration: none;
           font-weight: 500;
 
-          transition: 0.25s all;
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          transition: all .25s ease;
         }
 
         h3 {
@@ -139,7 +144,9 @@ div.content {
         }
 
         .links {
-          font-size: 0.85em;
+          font-size: 20px;
+          transition: transform ease 0.25s;
+          transform-origin: left top;
 
           a {
             display: inline-block;
@@ -190,7 +197,7 @@ div.content {
           }
 
           .links {
-            font-size: 1em;
+            transform: scale(1.25);
           }
         }
 

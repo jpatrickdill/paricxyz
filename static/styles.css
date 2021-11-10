@@ -11,7 +11,8 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Sections
    ========================================================================== */
@@ -19,7 +20,8 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -27,7 +29,8 @@ body {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /* Grouping content
    ========================================================================== */
@@ -41,7 +44,8 @@ hr {
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -51,7 +55,8 @@ pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -59,7 +64,8 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -71,14 +77,16 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   text-decoration: underline dotted;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -90,13 +98,15 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -107,13 +117,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -121,7 +134,8 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 img {
-  border-style: none; }
+  border-style: none;
+}
 
 /* Forms
    ========================================================================== */
@@ -141,7 +155,8 @@ textarea {
   line-height: 1.15;
   /* 1 */
   margin: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Show the overflow in IE.
@@ -150,7 +165,8 @@ textarea {
 button,
 input {
   /* 1 */
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -159,41 +175,46 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; }
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
 
 /**
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
 
 /**
  * Correct the padding in Firefox.
  */
 fieldset {
-  padding: 0.35em 0.75em 0.625em; }
+  padding: 0.35em 0.75em 0.625em;
+}
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -213,53 +234,60 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */ }
+  /* 1 */
+}
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -269,7 +297,8 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Interactive
    ========================================================================== */
@@ -277,13 +306,15 @@ textarea {
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
 details {
-  display: block; }
+  display: block;
+}
 
 /*
  * Add the correct display in all browsers.
  */
 summary {
-  display: list-item; }
+  display: list-item;
+}
 
 /* Misc
    ========================================================================== */
@@ -291,175 +322,233 @@ summary {
  * Add the correct display in IE 10+.
  */
 template {
-  display: none; }
+  display: none;
+}
 
 /**
  * Add the correct display in IE 10.
  */
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 html {
-  height: 100%; }
+  height: 100%;
+}
 
 body {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
   height: 100%;
   background: linear-gradient(#9b6ce7 0%, #bf4dd9 100%) no-repeat fixed;
-  color: #fff; }
+  color: #fff;
+}
 
 ::selection {
   background-color: #0B62E9;
-  color: white; }
+  color: white;
+}
 
 code {
   font-family: Roboto Mono, monospace;
-  font-size: 0.85em; }
+  font-size: 0.85em;
+}
 
 header {
   padding-left: 50px;
   /* margin-left: 50px; */
-  user-select: none; }
-  header a, header a:visited {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    cursor: default; }
+  user-select: none;
+}
+header a, header a:visited {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  cursor: default;
+}
+header h1.name {
+  font-weight: 300;
+  font-size: 87pt;
+  margin: 30px 0;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    padding-left: 0;
+    text-align: center;
+  }
   header h1.name {
-    font-weight: 300;
-    font-size: 87pt;
-    margin: 30px 0; }
-  @media only screen and (max-width: 600px) {
-    header {
-      padding-left: 16px; }
-      header h1.name {
-        font-size: 64pt;
-        margin: 30px 0 16px 0; }
-        header h1.name .ln {
-          font-size: 32pt; } }
+    font-size: 64pt;
+    margin: 30px 0 16px 0;
+  }
+  header h1.name .ln {
+    font-size: 32pt;
+  }
+}
 
 nav {
   display: none;
-  text-align: center; }
-  nav a, nav a:visited {
-    display: inline-block;
-    color: white;
-    font-weight: 400;
-    text-decoration: none; }
+  text-align: center;
+}
+nav a, nav a:visited {
+  display: inline-block;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
 
 @media only screen and (max-width: 600px) {
   nav {
-    display: block; } }
+    display: block;
+  }
+}
 div.content {
   display: flex;
-  padding: 0 40px; }
-  div.content h2 {
-    font-weight: 400;
-    font-size: 24pt; }
-  div.content h4 {
-    font-weight: 300;
-    font-size: 1.25em;
-    margin-bottom: 10px; }
-  @media only screen and (max-width: 600px) {
-    div.content {
-      display: block;
-      padding: 16px 16px; } }
+  padding: 0 40px;
+}
+div.content h2 {
+  font-weight: 400;
+  font-size: 24pt;
+}
+div.content h4 {
+  font-weight: 300;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  div.content {
+    display: block;
+    padding: 16px 16px;
+  }
+}
+div.content .portfolio {
+  flex: 3 3;
+  margin: 0 32px 16px 0;
+}
+@media only screen and (max-width: 600px) {
   div.content .portfolio {
-    flex: 3 3;
-    margin: 0 32px 16px 0; }
-    @media only screen and (max-width: 600px) {
-      div.content .portfolio {
-        margin: 0 0 0px 0; } }
-    div.content .portfolio .projects .project {
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-      margin: 8px 0;
-      padding: 12px 24px;
-      font-weight: 400;
-      font-size: 0.9em;
-      transition: 0.25s all; }
-      div.content .portfolio .projects .project a, div.content .portfolio .projects .project a:visited {
-        color: #8128e7;
-        text-decoration: none;
-        font-weight: 500;
-        transition: 0.25s all; }
-      div.content .portfolio .projects .project h3 {
-        margin: 24px 8px; }
-        div.content .portfolio .projects .project h3 a, div.content .portfolio .projects .project h3 a:visited {
-          color: white;
-          text-decoration: none; }
-      div.content .portfolio .projects .project .links {
-        font-size: 0.85em; }
-        div.content .portfolio .projects .project .links a {
-          display: inline-block;
-          padding: 0; }
-          div.content .portfolio .projects .project .links a:not(:first-child)::before {
-            content: '|';
-            margin-right: 6px; }
-      div.content .portfolio .projects .project .desc {
-        margin: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: 0.5s max-height; }
-      div.content .portfolio .projects .project .tagline {
-        margin-bottom: 16px;
-        transition: 0.5s margin; }
-      div.content .portfolio .projects .project:hover {
-        color: #0A3457;
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2); }
-        div.content .portfolio .projects .project:hover .desc {
-          max-height: 100vh; }
-        div.content .portfolio .projects .project:hover a, div.content .portfolio .projects .project:hover a:visited {
-          color: #8128e7; }
-        div.content .portfolio .projects .project:hover h3 > a, div.content .portfolio .projects .project:hover h3 > a:visited {
-          color: #0A3457; }
-        div.content .portfolio .projects .project:hover .name img {
-          filter: none; }
-        div.content .portfolio .projects .project:hover .tagline {
-          margin-bottom: 0; }
-        div.content .portfolio .projects .project:hover .links {
-          font-size: 1em; }
-      div.content .portfolio .projects .project .name {
-        display: flex;
-        align-items: center; }
-        div.content .portfolio .projects .project .name h3 {
-          font-weight: 400;
-          font-size: 1.5em;
-          margin-left: 8px; }
-        div.content .portfolio .projects .project .name img {
-          height: 48px;
-          filter: brightness(0) invert(1);
-          transition: 0.25s filter; }
+    margin: 0 0 0px 0;
+  }
+}
+div.content .portfolio .projects .project {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  margin: 8px 0;
+  padding: 12px 24px;
+  font-weight: 400;
+  font-size: 0.9em;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+div.content .portfolio .projects .project a, div.content .portfolio .projects .project a:visited {
+  color: #8128e7;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+div.content .portfolio .projects .project h3 {
+  margin: 24px 8px;
+}
+div.content .portfolio .projects .project h3 a, div.content .portfolio .projects .project h3 a:visited {
+  color: white;
+  text-decoration: none;
+}
+div.content .portfolio .projects .project .links {
+  font-size: 20px;
+  transition: transform ease 0.25s;
+  transform-origin: left top;
+}
+div.content .portfolio .projects .project .links a {
+  display: inline-block;
+  padding: 0;
+}
+div.content .portfolio .projects .project .links a:not(:first-child)::before {
+  content: "|";
+  margin-right: 6px;
+}
+div.content .portfolio .projects .project .desc {
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s max-height;
+}
+div.content .portfolio .projects .project .tagline {
+  margin-bottom: 16px;
+  transition: 0.5s margin;
+}
+div.content .portfolio .projects .project:hover {
+  color: #0A3457;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+div.content .portfolio .projects .project:hover .desc {
+  max-height: 100vh;
+}
+div.content .portfolio .projects .project:hover a, div.content .portfolio .projects .project:hover a:visited {
+  color: #8128e7;
+}
+div.content .portfolio .projects .project:hover h3 > a, div.content .portfolio .projects .project:hover h3 > a:visited {
+  color: #0A3457;
+}
+div.content .portfolio .projects .project:hover .name img {
+  filter: none;
+}
+div.content .portfolio .projects .project:hover .tagline {
+  margin-bottom: 0;
+}
+div.content .portfolio .projects .project:hover .links {
+  transform: scale(1.25);
+}
+div.content .portfolio .projects .project .name {
+  display: flex;
+  align-items: center;
+}
+div.content .portfolio .projects .project .name h3 {
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-left: 8px;
+}
+div.content .portfolio .projects .project .name img {
+  height: 48px;
+  filter: brightness(0) invert(1);
+  transition: 0.25s filter;
+}
+div.content .right {
+  flex: 2 2;
+}
+div.content .right div {
+  margin-bottom: 48px;
+}
+@media only screen and (max-width: 600px) {
   div.content .right {
-    flex: 2 2; }
-    div.content .right div {
-      margin-bottom: 48px; }
-    @media only screen and (max-width: 600px) {
-      div.content .right {
-        margin: 0; } }
-    div.content .right .socials .list a, div.content .right .socials .list a:visited {
-      display: block;
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.25s all;
-      margin: 5px 0; }
-      div.content .right .socials .list a img, div.content .right .socials .list a:visited img {
-        position: relative;
-        filter: brightness(0) invert(1);
-        height: 40px;
-        width: 40px;
-        vertical-align: middle; }
-      div.content .right .socials .list a span, div.content .right .socials .list a:visited span {
-        position: relative;
-        margin-left: 5px;
-        text-overflow: clip;
-        white-space: nowrap;
-        overflow: hidden;
-        text-align: center;
-        vertical-align: middle; }
+    margin: 0;
+  }
+}
+div.content .right .socials .list a, div.content .right .socials .list a:visited {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s all;
+  margin: 5px 0;
+}
+div.content .right .socials .list a img, div.content .right .socials .list a:visited img {
+  position: relative;
+  filter: brightness(0) invert(1);
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+div.content .right .socials .list a span, div.content .right .socials .list a:visited span {
+  position: relative;
+  margin-left: 5px;
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
 
 /*# sourceMappingURL=styles.css.map */
