@@ -27,4 +27,4 @@ def portfolio():
 
 
 if __name__ == '__main__':
-    app.run(server_name=server_name, debug=True)
+    app.run(debug=True)  # server_name=server_name, debug=True)
