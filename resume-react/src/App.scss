@@ -1,0 +1,144 @@
+$link: #8128e7;
+$bg-1: #9b6ce7;
+$bg-2: #d130f8;
+$header-col: #ffeeee;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+body {
+  background: linear-gradient($bg-1 0%, $bg-2 100%) no-repeat fixed;
+  font-family: "Jost", sans-serif;
+}
+
+div.app {
+  width: 1080px;
+  margin: 0 auto 36px auto;
+
+  font-size: 1.5rem;
+}
+
+h1, h2 {
+  color: $header-col;
+  font-weight: 500;
+}
+
+a, a:visited {
+  color: #8128e7;
+
+  text-decoration: none;
+  transition: 0.25s ease all;
+
+  &:hover {
+    color: #8128e7;
+  }
+}
+
+header {
+  color: $header-col;
+  margin-left: 268px;
+
+  h1 {
+    font-size: 64px;
+    margin-bottom: 0;
+  }
+
+  .contacts {
+    color: $header-col;
+
+    a, a:visited, a:hover {
+      color: $header-col;
+      text-decoration: underline;
+    }
+
+    span.dot {
+      margin: 0 5px;
+    }
+  }
+}
+
+h3, h4, h5, h6 {
+  font-weight: inherit;
+}
+
+.card {
+  padding: 12px 32px;
+  background: white;
+  border-radius: 12px;
+
+  line-height: 1.25;
+
+  font-weight: 400;
+  color: #3d3844;
+
+  transition: 0.2s background ease;
+
+  h3, h4, h5, h6 {
+    margin-top: 8px;
+    font-weight: 500;
+  }
+
+  margin-bottom: 12px;
+}
+
+.content {
+  margin-top: 1em;
+  display: flex;
+  align-items: stretch;
+
+  .left {
+    .sidebar {
+      display: block;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 16px;
+      min-width: 185px;
+
+      font-size: 16pt;
+      text-transform: lowercase;
+
+      background: rgba(255, 255, 255, 0.4);
+
+      a, a:visited, a:hover {
+        color: inherit;
+      }
+
+      span.selected {
+        color: #9b6ce7;
+      }
+
+      .nest {
+        padding-left: 1em;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  .resume {
+    margin-left: 16px;
+
+    .links {
+      margin-top: 4px;
+
+      span, a, a:visited {
+        color: #8128e7;
+      }
+
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+  }
+}
+
+.skills {
+  margin-top: 12px;
+  //text-align: center;
+
+  img {
+    height: 48px;
+    margin-right: 8px;
+  }
+}

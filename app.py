@@ -30,9 +30,14 @@ def hello_world():
     return render_template("index.html", projects=projects["projects"])
 
 
-@app.route("/resume")
+@app.route("/oldresume")
 def portfolio():
     return render_template("portfolio.html", projects=projects["projects"])
+
+
+@app.route("/resume")
+def resume():
+    return render_template("resumereact.html")
 
 
 if __name__ == "__main__":
