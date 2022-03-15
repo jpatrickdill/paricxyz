@@ -30,11 +30,6 @@ def hello_world():
     return render_template("index.html", projects=projects["projects"])
 
 
-@app.route("/oldresume")
-def portfolio():
-    return render_template("portfolio.html", projects=projects["projects"])
-
-
 @app.route("/portfolio")
 def portfolio():
     return render_template("resumereact.html")
