@@ -1,6 +1,6 @@
 import json
 import os
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 
 indev = True if os.environ.get("dev") else False
 
@@ -35,9 +35,14 @@ def portfolio():
     return render_template("portfolio.html", projects=projects["projects"])
 
 
+@app.route("/portfolio")
+def portfolio():
+    return render_template("resumereact.html")
+
+
 @app.route("/resume")
 def resume():
-    return render_template("resumereact.html")
+    return redirect(url_for("portfolio"))
 
 
 if __name__ == "__main__":
