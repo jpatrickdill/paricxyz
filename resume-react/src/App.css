@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");
+body {
+  background: linear-gradient(#9b6ce7 0%, #d130f8 100%) no-repeat fixed;
+  font-family: "Jost", sans-serif;
+}
+
+div.app {
+  width: 1080px;
+  margin: 0 auto 36px auto;
+  font-size: 1.5rem;
+}
+
+h1, h2 {
+  color: #ffeeee;
+  font-weight: 500;
+}
+
+a, a:visited {
+  color: #8128e7;
+  text-decoration: none;
+  transition: 0.25s ease all;
+}
+a:hover, a:visited:hover {
+  color: #8128e7;
+}
+
+header {
+  color: #ffeeee;
+  margin-left: 268px;
+}
+header h1 {
+  font-size: 64px;
+  margin-bottom: 0;
+}
+header .contacts {
+  color: #ffeeee;
+}
+header .contacts a, header .contacts a:visited, header .contacts a:hover {
+  color: #ffeeee;
+  text-decoration: underline;
+}
+header .contacts span.dot {
+  margin: 0 5px;
+}
+
+h3, h4, h5, h6 {
+  font-weight: inherit;
+}
+
+.card {
+  padding: 12px 32px;
+  background: white;
+  border-radius: 12px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #3d3844;
+  transition: 0.2s background ease;
+  margin-bottom: 12px;
+}
+.card h3, .card h4, .card h5, .card h6 {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.content {
+  margin-top: 1em;
+  display: flex;
+  align-items: stretch;
+}
+.content .left .sidebar {
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 16px;
+  min-width: 185px;
+  font-size: 16pt;
+  text-transform: lowercase;
+  background: rgba(255, 255, 255, 0.4);
+}
+.content .left .sidebar a, .content .left .sidebar a:visited, .content .left .sidebar a:hover {
+  color: inherit;
+}
+.content .left .sidebar span.selected {
+  color: #9b6ce7;
+}
+.content .left .sidebar .nest {
+  padding-left: 1em;
+}
+.content .left .sidebar:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.content .resume {
+  margin-left: 16px;
+}
+.content .resume .links {
+  margin-top: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.content .resume .links span, .content .resume .links a, .content .resume .links a:visited {
+  color: #8128e7;
+}
+
+.skills {
+  margin-top: 12px;
+}
+.skills img {
+  height: 48px;
+  margin-right: 8px;
+}
+
+/*# sourceMappingURL=App.css.map */
