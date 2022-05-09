@@ -1,35 +1,27 @@
 import "./App.scss";
-import {Component} from "react";
-import {Image, Gallery} from "./gallery.js";
+import {Component, useState} from "react";
+import {Image} from "./gallery.js";
 
 import rdsinv1 from "./img/rdsinv1.png";
 import rdsinv2 from "./img/rdsinv2.png";
 import rbx1 from "./img/rbx1.png";
 import rbx2 from "./img/rbx2.png";
-import nchs from "./img/nchs.png";
+import nchs1 from "./img/nchs1.png";
+import nchs2 from "./img/nchs2.png";
+import nchs3 from "./img/nchs3.png";
 import ncicon from "./img/ncband.png";
 
-class SidebarItem extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return (
-            <div className="item">
-                {!this.selected ?
-                    <a href={this.props.to} onClick={this.props.cb}>{this.props.title}</a>
-                    :
-                    <span className="selected">{this.props.title}</span>
-                }
-                {this.props.children ?
-                    <div className="nest">
-                        {this.props.children}
-                    </div>
-                    : null}
-            </div>
-        )
-    }
+function SidebarItem(props) {
+    return (
+        <div className="item">
+            <a href={props.to} onClick={props.cb}>{props.title}</a>
+            {props.children ?
+                <div className="nest">
+                    {props.children}
+                </div>
+                : null}
+        </div>
+    )
 }
 
 
@@ -120,7 +112,7 @@ const skill_icons = {
     redis: "https://cdn.iconscout.com/icon/free/png-256/redis-83994.png",
     lua: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/1200px-Lua-Logo.svg.png",
     jekyll: "https://miro.medium.com/max/600/1*ThcllHZuDgpCMUCjYLqQag.png",
-    jquery: "https://cdn.iconscout.com/icon/free/png-256/jquery-10-1175155.png",
+    jquery: "https://cdn.i conscout.com/icon/free/png-256/jquery-10-1175155.png",
     wordpress: "https://cdn-icons-png.flaticon.com/512/174/174881.png"
 }
 
@@ -165,8 +157,8 @@ function App() {
                         <div className="card sidebar">
                             <SidebarItem to="#contact" title="About me"/>
                             <SidebarItem to="#portfolio" title="Portfolio">
-                                <SidebarItem to="#professional" title="Professional"/>
-                                <SidebarItem to="#personal" title="Personal"/>
+                                {/*<SidebarItem to="#professional" title="Professional"/>*/}
+                                {/*<SidebarItem to="#personal" title="Personal"/>*/}
                             </SidebarItem>
                         </div>
                     </div>
@@ -190,7 +182,29 @@ function App() {
                         </Card>
 
                         <h2 id="portfolio">Portfolio</h2>
-                        <Card>
+                        <Card id="marchathon">
+                            <ItemTitle icon={ncicon} darkicon>NCHS Marchathon</ItemTitle>
+                            {Links([
+                                ["Website", "https://marchathon.nchsband.com/"]
+                            ])}
+
+                            {Skills("React", "Python", "HTML", "SASS", "PostgreSQL")}
+
+                            <p>
+                                I created a donations website for my local high school's marching band. The website
+                                is used for the Marchathon fundraising event and as a general donations website.
+                            </p>
+                            <p>
+                                Marchathon features a Python FastAPI backend, which confirms payments and stores
+                                donation receipts in a PostgreSQL database. The frontend was created with React.
+                            </p>
+
+                            <Image src={nchs1}/>
+                            <Image src={nchs2}/>
+                            <Image src={nchs3}/>
+
+                        </Card>
+                        <Card id="rdsinv">
                             <ItemTitle>RDS-Inv</ItemTitle>
                             {Links([
                                 ["Contact", "mailto:jamespatrickdill@gmail.com"],
@@ -213,7 +227,7 @@ function App() {
                             <Image src={rdsinv1}/>
                             <Image src={rdsinv2}/>
                         </Card>
-                        <Card>
+                        <Card id="rbxlist">
                             <ItemTitle icon="https://paric.xyz/icons/rbxserverlist.png">RbxList</ItemTitle>
                             {/*{Links([*/}
                             {/*    ["Docs", "https://requests.paric.xyz/"]*/}
@@ -244,25 +258,7 @@ function App() {
                             <Image src={rbx2}/>
 
                         </Card>
-                        <Card>
-
-                            <ItemTitle icon={ncicon} darkicon>High School Band Website</ItemTitle>
-                            {Skills("HTML", "CSS", "JavaScript", "jQuery", "Wordpress")}
-
-                            <p>
-                                While in high school, I created a website for the marching band that I was a member of.
-                                It needed to be easy to work with for future parent volunteers, so I used the Wordpress
-                                CMS with custom CSS styles instead of coding it directly.
-                            </p>
-                            <p>
-                                I also created a custom payments form using jQuery that allows parents to make
-                                payments online via PayPal, whose fees are added automatically.
-                            </p>
-
-                            <Image src={nchs}/>
-
-                        </Card>
-                        <Card>
+                        <Card id="requests">
 
                             <ItemTitle icon="https://paric.xyz/icons/requests-64.png">Roblox Requests</ItemTitle>
                             {Links([
