@@ -5,7 +5,7 @@ export function Image(props) {
 
 
     let fullDisplay = (
-        <div key={"div" + props.src} style={{
+        <div style={{
             transition: "0.4s ease opacity",
 
             position: "fixed",
@@ -21,7 +21,7 @@ export function Image(props) {
             pointerEvents: !selected ? "none" : null
         }}>
             <img key={props.src} src={props.src} alt={props.alt} style={{
-                transition: "0.2s ease-in height",
+                transition: "0.2s ease all",
                 objectFit: "contain",
                 height: selected ? "95%" : "0",
                 width: selected ? "90%" : "0",
@@ -35,14 +35,10 @@ export function Image(props) {
     );
 
     return (
-        <div key={"div" + props.src} style={{
-            transition: "0.2s ease background",
+        <div style={{
             display: "inline-block",
-            background: "rgba(155, 108, 231, 0)",
         }}>
-            <img key={props.src} src={props.src} alt={props.alt} height="128px" style={{
-                //transition: "0.2s ease-in height"
-            }}
+            <img src={props.src} alt={props.alt} height="128px"
                  onClick={(e) => {
                      setSelected(true);
                  }}/>

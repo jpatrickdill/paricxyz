@@ -2,6 +2,8 @@ import "./App.scss";
 import {Component, useState} from "react";
 import {Image} from "./gallery.js";
 
+import {BrowserView} from "react-device-detect";
+
 import rdsinv1 from "./img/rdsinv1.png";
 import rdsinv2 from "./img/rdsinv2.png";
 import rbx1 from "./img/rbx1.png";
@@ -83,7 +85,7 @@ function Contacts(items) {
             );
         } else {
             els.push(
-                <span>{item}</span>
+                <span className="c-item">{item}</span>
             );
         }
 
@@ -153,15 +155,17 @@ function App() {
                 </header>
 
                 <div className="content">
-                    <div className="left">
-                        <div className="card sidebar">
-                            <SidebarItem to="#contact" title="About me"/>
-                            <SidebarItem to="#portfolio" title="Portfolio">
-                                {/*<SidebarItem to="#professional" title="Professional"/>*/}
-                                {/*<SidebarItem to="#personal" title="Personal"/>*/}
-                            </SidebarItem>
+                    <BrowserView>
+                        <div className="left">
+                            <div className="card sidebar">
+                                <SidebarItem to="#contact" title="About me"/>
+                                <SidebarItem to="#portfolio" title="Portfolio">
+                                    {/*<SidebarItem to="#professional" title="Professional"/>*/}
+                                    {/*<SidebarItem to="#personal" title="Personal"/>*/}
+                                </SidebarItem>
+                            </div>
                         </div>
-                    </div>
+                    </BrowserView>
 
                     <div className="resume">
                         <Card id="about">
@@ -191,24 +195,25 @@ function App() {
                             {Skills("React", "Python", "HTML", "SASS", "PostgreSQL")}
 
                             <p>
-                                I created a donations website for my local high school's marching band. The website
-                                is used for the Marchathon fundraising event and as a general donations website.
+                                I created a donations website for my local high school's marching band.
                             </p>
                             <p>
                                 Marchathon features a Python FastAPI backend, which confirms payments and stores
                                 donation receipts in a PostgreSQL database. The frontend was created with React.
                             </p>
 
-                            <Image src={nchs1}/>
-                            <Image src={nchs2}/>
-                            <Image src={nchs3}/>
+                            <div className="images">
+                                <Image src={nchs1}/>
+                                <Image src={nchs2}/>
+                                <Image src={nchs3}/>
+                            </div>
 
                         </Card>
                         <Card id="rdsinv">
                             <ItemTitle>RDS-Inv</ItemTitle>
-                            {Links([
-                                ["Contact", "mailto:jamespatrickdill@gmail.com"],
-                            ])}
+                            {/*{Links([*/}
+                            {/*    ["Contact", "mailto:jamespatrickdill@gmail.com"],*/}
+                            {/*])}*/}
 
                             {Skills("HTML", "CSS", "JavaScript", "SASS", "React", "Python", "PostgreSQL", "Heroku")}
 
@@ -222,10 +227,11 @@ function App() {
                                 database. The frontend is built with React, and uses Socket.IO to pair the user's
                                 phone with the desktop site for inventory scanning.
                             </p>
-                            <p>
-                            </p>
-                            <Image src={rdsinv1}/>
-                            <Image src={rdsinv2}/>
+
+                            <div className="images">
+                                <Image src={rdsinv1}/>
+                                <Image src={rdsinv2}/>
+                            </div>
                         </Card>
                         <Card id="rbxlist">
                             <ItemTitle icon="https://paric.xyz/icons/rbxserverlist.png">RbxList</ItemTitle>
@@ -236,13 +242,8 @@ function App() {
                             {Skills("HTML", "CSS", "JavaScript", "SASS", "Python", "PostgreSQL", "Redis", "Heroku")}
 
                             <p>
-                                RbxList is a service I created for Roblox communities on Discord.
-                            </p>
-                            <p>
-                                I made RbxList to provide a simple way for Roblox users to share their private
-                                servers with groups. Instead of manually maintaining a list of
-                                private servers like many communities do, RbxList allows members of your Discord
-                                to "donate" their private server.
+                                RbxList is a service I created for Roblox communities on Discord. RbxList allows members
+                                of your Discord to "donate" their private server to a maintained list.
                             </p>
                             <p>
                                 I used Chrome devtools to discover the Roblox server list APIs used in this app.
@@ -254,8 +255,10 @@ function App() {
                                 Discord.py.
                             </p>
 
-                            <Image src={rbx1}/>
-                            <Image src={rbx2}/>
+                            <div className="images">
+                                <Image src={rbx1}/>
+                                <Image src={rbx2}/>
+                            </div>
 
                         </Card>
                         <Card id="requests">
